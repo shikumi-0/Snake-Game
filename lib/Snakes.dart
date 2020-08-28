@@ -243,16 +243,19 @@ class _SnakeState extends State<Snake> {
                                   });
                                 }),
                             IconButton(
-                                icon: Icon(Icons.keyboard_arrow_down,
-                                    color: Colors.red),
-                                onPressed: () {
-                                  setState(() {
+                              icon: Icon(Icons.keyboard_arrow_down,
+                                  color: Colors.red),
+                              onPressed: () {
+                                setState(
+                                  () {
                                     speed++;
                                     print(speed);
-                                  });
-                                }),
+                                  },
+                                );
+                              },
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
                   )
